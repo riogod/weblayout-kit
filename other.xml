@@ -1,0 +1,23 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/local/bin/node">
+      <version-cache version="10.15.3" last-modified="1551798630000" />
+    </local-interpreter>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ColorChooser.RecentColors" value="74-70-90-193,,,0-203-255-255,,,255-255-255-161,,,255-255-255-0,,,0-0-0-255,,,28-26-34-0,,,217-209-255-0,,,0-203-255-0,,,255-255-255-25,,,255-20-0-255,,,74-70-90-255,,,74-70-90-186,,,17-255-155-255,,,28-26-34-40,,,16-27-49-255,,,28-26-34-255,,,255-255-255-255,,,10-12-17-255,,,0-0-0-204,,,44-125-206-255" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="FileTemplates.SelectedTemplate" value="HTML File" />
+    <property name="InstalledPluginsSearchHistory" value="Key Promoter&#10;CodeS" />
+    <property name="SettingsSearchHistory" value="save" />
+    <property name="TrendingPluginsSearchHistory" value="gulp&#10;JavaScript Support&#10;Key Promoter&#10;Style&#10;js" />
+    <property name="WebStorm.enableDefaultTooltipFixes" value="true" />
+    <property name="WebStorm.enableSmartQuotes" value="true" />
+    <property name="WebStorm.initialConfigurationShown" value="true" />
+    <property name="evlsprt3.183" value="18" />
+    <property name="file.gist.reindex.count" value="36385" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="ts.lib.d.ts.version" value="3.2.1" />
+  </component>
+</application>

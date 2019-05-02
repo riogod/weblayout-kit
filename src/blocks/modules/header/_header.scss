@@ -1,38 +1,134 @@
+.header_bg {
+  background: #321923 linear-gradient(0deg, rgba(50, 25, 35, 0) 0.4%,
+          rgba(50, 25, 35, 0.7) 45%,
+          rgba(50, 25, 35, 0.5) 55%,
+          rgba(50, 25, 35, 0) 99.6%);
 
+  z-index: -2;
+  //display:grid;
+
+
+
+  max-height: 660px;
+
+
+  grid-column: 1 / 4;
+  grid-row: 1;
+
+}
+.header_image {
+  z-index: -1;
+  grid-column: 2 / 4;
+  grid-row: 1;
+  background: no-repeat url("../img/header_bg.png") top left;
+  background-position: 19.5rem;
+  clip-path: polygon(75ex 0, 100% 0rem, 100% 100%, 48ex 100%);
+  max-height: 660px;
+  background-size: auto 100%;
+
+}
 
 .header {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns:
+          [cnt-start] repeat(12, 1fr) [cnt-end];
 
-
-  grid-area: 1 /  span 3 / 1 / 3;
-
-  .header__slogan {
-    background: rgba(255, 154, 72, 0.5);
+  .logo {
+    display: flex;
+    background: no-repeat url("../img/logo.png") top left;
+    cursor: pointer;
+    width: 133px;
+    height: 39px;
+    margin-top: 39px;
 
   }
 
-
-
-  .logo {
-    background: rgba(255, 12, 24, 0.5);
+  .slogan {
+    color: #B78383;
+    position: relative;
+    grid-column: 2 / 5;
+    grid-row: 1;
+    padding-left: 24px;
+    margin-top: 39px;
 
   }
 
   .header__contacts {
-
-    ul>li {
-      display: inline-block;
-    }
+    display: flex;
+    grid-column: 6 / 13;
+    grid-row: 1;
+    margin-top: 40px;
+    justify-content: flex-end;
+      ul>li {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 30px;
+        font-size: 14px;
+      }
   }
 
   .header__nav {
+    display: flex;
+    grid-column: -1 / 5;
+    grid-row: 1;
+    margin-top: 110px;
+    justify-content: flex-end;
 
-
-    ul>li {
-      display: inline-block;
-
-    }
+      ul>li {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 30px;
+        font-size: 14px;
+      }
   }
-
-
 }
+
+li {
+  display: inline-block;
+}
+
+
+
+
+//.header {
+//
+//
+//  grid-area: 1 /  span 3 / 1 / 3;
+//
+//  .header__slogan {
+//    background: rgba(255, 154, 72, 0.5);
+//    //font-size: 12rem;
+//  }
+//
+//
+//
+//  .logo {
+//    background: rgba(255, 12, 24, 0.5);
+//
+//  }
+//
+//  .header__contacts {
+//
+//    ul>li {
+//      display: inline-block;
+//      font-size: 1rem;
+//    }
+//  }
+//
+//  .header__nav {
+//
+//
+//    ul>li {
+//      display: inline-block;
+//      font-size: 1rem;
+//
+//    }
+//  }
+//
+//
+//}
 

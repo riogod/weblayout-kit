@@ -1,0 +1,38 @@
+
+
+.header {
+
+
+  grid-area: 1 /  span 3 / 1 / 3;
+
+  .header__slogan {
+    background: rgba(255, 154, 72, 0.5);
+
+  }
+
+
+
+  .logo {
+    background: rgba(255, 12, 24, 0.5);
+
+  }
+
+  .header__contacts {
+
+    ul>li {
+      display: inline-block;
+    }
+  }
+
+  .header__nav {
+
+
+    ul>li {
+      display: inline-block;
+
+    }
+  }
+
+
+}
+

@@ -1,7 +1,11 @@
 extends layouts/default
 block variables
-	- var title = "gulp-pug-starter"
+	- var title = "JGROUP"
 
 block content
+	.header_bg
 	.container
-		include ../blocks/modules/main/main
+		include ../blocks/modules/header/header
+		include ../blocks/modules/section-tabs/section-tabs
+
+		include ../blocks/modules/footer/footer

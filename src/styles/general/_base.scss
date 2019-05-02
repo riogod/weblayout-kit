@@ -1,29 +1,39 @@
 body {
-	font-family: "Arial", sans-serif;
+	font-family: "Century Gothic", sans-serif;
 	font-size: 16px;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 100vw;
+	height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
-	padding: 0;
-	margin: 0;
+.header_bg {
+	background: #321923 linear-gradient(0deg, rgba(50, 25, 35, 0) 0.4%,
+					rgba(50, 25, 35, 0.7) 45%,
+					rgba(50, 25, 35, 0.5) 55%,
+					rgba(50, 25, 35, 0) 99.6%);
+	z-index: -1;
+	width: 100vw;
+	height: 660px;
+
+	//background-image: url("");
+
 }
+
 
 .container {
-	@include container();
-	@include sm(max-width, 510px);
-	@include md(max-width, 690px);
-	@include lg(max-width, 930px);
-	@include xl(max-width, 1110px);
+
+	display: grid;
+	grid-template-columns:
+					minmax(1em, 1fr)
+					[main-start] minmax(0, 73.125rem) [main-end]
+					minmax(1em, 1fr) ;
+	grid-template-areas: "header content header";
+	max-width:100vw;
+	margin:auto;
+	box-shadow: 0 0 12px rgba(0,0,0,.25);
+
+
 }
 
-.img-responsive {
-	max-width: 500px;
-	width: 100%;
-	height: auto;
+.container > * {
+	grid-column: main;
 }
